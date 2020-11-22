@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./echarts.min.js"></script>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        var myChart = echarts.init(document.getElementById('box'));
+        var option = {
+            title: {
+                text: '李灿辅助英雄强弱图'
+            },
+            tooltip: {},
+            legend: {
+                data:['强弱程度']
+            },
+            xAxis: {
+                data: ["奶妈","露露","石头人","泰坦","风女","日女"]
+            },
+            yAxis: {},
+            series: [{
+                name: '强弱程度',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

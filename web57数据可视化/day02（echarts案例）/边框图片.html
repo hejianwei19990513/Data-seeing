@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 200px;
+            border-width: 50px;
+            border-style: solid;
+            border-color: red;
+
+            /* 边框图片路径 */
+            border-image-source: url(./项目/images/border.png);
+            /* 边框图片截取四个角*/
+            border-image-slice: 50 40 24 119;
+            /* 边框图片宽度 */
+            border-image-width: 50px 40px 24px 119px;
+            /* 边框图片平铺方式 */
+            border-image-repeat: round;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
